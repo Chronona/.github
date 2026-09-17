@@ -1,0 +1,2 @@
+# テンプレートに当てはまらない起票を塞がないため、空の Issue を許可する。
+blank_issues_enabled: true
