@@ -25,13 +25,13 @@
 
 #### PR 作成時
 - **1 Issue = 1 PR**（対応関係を明確に）
-- PR タイトル・説明��「何を」「なぜ」を簡潔に
+- PR タイトル・説明は「何を」「なぜ」を簡潔に
 - `Closes #123` を PR 本文に記載（Issue 自動クローズ）
 - PR マージ前に全テストが通ること
 
 ### 3. コミットメッセージ規約
 
-```
+```text
 <type>(<scope>): <subject>
 
 <body>
@@ -39,7 +39,7 @@
 Closes #<issue-number>
 ```
 
-**type（必須）:**
+**type（必須）：**
 - `feat:` 新機能
 - `fix:` バグ修正
 - `test:` テスト追加・修正
@@ -48,7 +48,7 @@ Closes #<issue-number>
 - `ci:` CI/CD 関連
 
 **例：**
-```
+```text
 test(auth): add login validation tests
 
 Add unit tests for email format validation
@@ -73,7 +73,7 @@ Closes #42
 エージェントが作業を始める前に、以下を確認：
 
 - [ ] 対応する Issue が存在するか（ない場合は先に Issue 作成）
-- [ ] リポジトリ�� `DEVELOPMENT.md` がないか確認
+- [ ] リポジトリに `DEVELOPMENT.md` がないか確認
 - [ ] テスト環境が動作するか（`npm test` / `python -m pytest` など）
 - [ ] テストコード → 実装コード の順に進める
 - [ ] リファクタリングはテスト成功後
